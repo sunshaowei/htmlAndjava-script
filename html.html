@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+</head>
+<script>
+function myFun() {
+alert("Hello World!")
+}
+
+function myFun2Csn(name,job){
+alert("Welcome "+name+" ,the "+job);
+}
+
+</script>
+
+
+<body>
+<button onclick="myFun()">没有参数</button>
+<br></br>
+<button onclick="myFun2Csn('孙少伟','男')">两个参数</button>
+</br></br>
+
+<p id="demo">结果位置</p>
+<button onclick="myFunction2()">接收参数</button>
+<script>
+function myFunction(a,b)
+{
+return a*b;
+}
+function myFunction2()
+{
+document.getElementById("demo").innerHTML="接收的参数"+myFunction(4,3);
+}
+
+</script>
+</body>
+</html>
